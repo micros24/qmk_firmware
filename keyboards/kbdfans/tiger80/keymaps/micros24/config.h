@@ -1,4 +1,4 @@
-/* Copyright 2022 micros24 <jasperjano.ph@gmail.com>
+/* Copyright 2023 micros24 <jasperjano.ph@protonmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,6 +14,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #pragma once
+#include "config_common.h"
+
+/* Adjust debounce */
+#ifdef DEBOUNCE
+	#undef DEBOUNCE
+	#define DEBOUNCE 8
+#endif
 
 /* Disable locking support */
 #ifdef LOCKING_SUPPORT_ENABLE
