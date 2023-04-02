@@ -16,10 +16,7 @@
 #pragma once
 
 /* Adjust debounce */
-#ifdef DEBOUNCE
-	#undef DEBOUNCE
-	#define DEBOUNCE 8
-#endif
+#define DEBOUNCE 9
 
 /* Disable locking support */
 #ifdef LOCKING_SUPPORT_ENABLE
